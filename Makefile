@@ -2,7 +2,7 @@
 run:
 	docker ps --filter name=rigel* --filter status=running -aq | xargs docker stop
 	docker build --progress=plain . -t rigel
-	docker run -d -it --rm --gpus all -p 7071:7071 rigel
+	docker run -it --rm --gpus all -p 7071:7071 rigel
 
 # Uploads the latest image to Cloud Run
 push:
