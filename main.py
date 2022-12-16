@@ -1,10 +1,5 @@
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
-from utils.time import *
-
-import time
-import json
-
 
 origins = ["*"]
 

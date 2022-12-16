@@ -25,7 +25,7 @@ COPY requirements.txt .
 COPY setup.py .
 
 RUN pip3 install git+https://github.com/KnowCorp/rigel
-RUN pip3 install git+https://github.com/boudinfl/pke.git@69337af9f9e72a25af6d7991eaa9869f1322dd72
+RUN pip3 install git+https://github.com/KnowCorp/pke.git@69337af9f9e72a25af6d7991eaa9869f1322dd72
 
 RUN python3 -m nltk.downloader universal_tagset
 RUN python3 -m spacy download en
