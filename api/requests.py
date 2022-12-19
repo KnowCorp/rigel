@@ -2,5 +2,5 @@ from dataclasses import dataclass
 
 
 @dataclass
-class ExplorerOrionNebulaRequest:
+class ExplorerRigelRequest:
     payload: dict
