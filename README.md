@@ -1,9 +1,11 @@
-# Questgen AI <br>
+# Rigel
 
-## Try advanced question generation models for free: https://questgen.ai/
-
-Questgen AI is an opensource NLP library focused on developing easy to use Question generation algorithms.<br>
+Rigel is based on Questgen AI, an opensource NLP library focused on developing easy to use Question generation algorithms.
 It is on a quest build the world's most advanced question generation AI leveraging on state-of-the-art transformer models like T5, BERT and OpenAI GPT-2 etc.
+
+<p align="center">
+  <img src="https://i.imgur.com/BrIhMzs.png" />
+</p>
 
 ### Currently Supported Question Generation Capabilities :
 
