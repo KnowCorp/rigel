@@ -1,5 +1,5 @@
 from utils.print import console_print
-from rigel import Rigel
+from Questgen import main
 
 
 def get_state_message(rigel_state):
@@ -18,7 +18,7 @@ def start_rigel():
     :return: The rigel object and the rigel_state object
     """
 
-    rigel = Rigel()
+    rigel = main.QGen()
 
     rigel_state = rigel.get_rigel_state()
 

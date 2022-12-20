@@ -1,5 +1,5 @@
-from .start import start_rigel
 from utils.print import console_print
+from .start import start_rigel
 
 import os
 

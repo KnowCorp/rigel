@@ -13,7 +13,7 @@ ENV PYTHONBUFFERED 1
 # - dev (Local Development/VM)
 # - prod (Production)
 ENV ENVIRONMENT dev
-ENV PORT 7071
+ENV PORT 7070
 
 RUN apt-get update \
     && apt-get -y install netcat gcc libpq-dev git wget python3.9 python3-pip \
@@ -24,7 +24,7 @@ WORKDIR $APP_HOME
 COPY requirements.txt .
 COPY setup.py .
 
-RUN pip3 install git+https://github.com/KnowCorp/rigel
+RUN pip3 install git+https://github.com/KnowCorp/rigel emojis==0.6.0
 RUN pip3 install git+https://github.com/KnowCorp/pke.git@69337af9f9e72a25af6d7991eaa9869f1322dd72
 
 RUN python3 -m nltk.downloader universal_tagset
@@ -35,4 +35,4 @@ RUN tar -xvf  s2v_reddit_2015_md.tar.gz
 
 COPY . .
 
-ENTRYPOINT [ "uvicorn", "main:app", "--reload", "--workers=4", "--host=0.0.0.0", "--port=7071" ]
+ENTRYPOINT [ "uvicorn", "main:app", "--reload", "--workers=4", "--host=0.0.0.0", "--port=7070" ]

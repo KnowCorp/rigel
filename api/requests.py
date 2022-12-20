@@ -1,6 +1,7 @@
-from dataclasses import dataclass
+from typing import Optional, List
+from pydantic import BaseModel
 
 
-@dataclass
-class ExplorerRigelRequest:
-    payload: dict
+class ExplorerRigelRequest(BaseModel):
+    input_text: str
+    max_questions: int
