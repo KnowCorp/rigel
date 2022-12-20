@@ -57,6 +57,9 @@ def inference_endpoint(body: ExplorerRigelRequest):
         #     "max_questions": 20,
         # }
 
+        if body.max_questions <= 0:
+            body.max_questions = 1
+
         payload = {
             "input_text": f"{body.input_text}",
             "max_questions": body.max_questions,
