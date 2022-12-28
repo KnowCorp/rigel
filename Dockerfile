@@ -35,4 +35,4 @@ RUN tar -xvf  s2v_reddit_2015_md.tar.gz
 
 COPY . .
 
-ENTRYPOINT [ "uvicorn", "main:app", "--reload", "--workers=4", "--host=0.0.0.0", "--port=7070" ]
+ENTRYPOINT [ "uvicorn", "main:app", "--reload", "--workers=33", "--host=0.0.0.0", "--port=7070" ]
