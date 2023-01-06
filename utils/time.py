@@ -12,14 +12,11 @@ def print_time(initial_time, msg: str = "") -> None:
     - `initial_time`: The initial time
     - `msg`: The message to print
 
-    The function returns `None`
-
     :param initial_time: The time at which the function was called
     :param msg: The message to print
-    :type msg: str
     """
 
     final_time = time.time()
-    total_time = f"{(final_time - initial_time):.5f}"
+    total_time = f"{(final_time - initial_time):.3f}"
 
-    console_print(msg=msg, status=total_time)
+    console_print(msg=msg, status=f"{total_time} seconds")
