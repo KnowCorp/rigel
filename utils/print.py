@@ -60,6 +60,6 @@ def console_print(msg: str = None, status: str = None, **kwargs) -> None:
     else:
         logging.info(
             emojis.encode(
-                f" {system} :snake: {Color.PURPLE}{msg}{Color.END} | {Color.YELLOW}{status}{Color.END}"
+                f" {system} {Color.PURPLE}{msg}{Color.END} | {Color.YELLOW}{status}{Color.END}"
             )
         )
