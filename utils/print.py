@@ -39,7 +39,7 @@ def console_print(msg: str = None, status: str = None, **kwargs) -> None:
             elif key == "info":
                 logging.info(
                     emojis.encode(
-                        f"  {system} :information_source: {Color.CYAN}{value}{Color.END}"
+                        f" {system} :information_source: {Color.CYAN}{value}{Color.END}"
                     )
                 )
             elif key == "success":
