@@ -1,7 +1,7 @@
 # Runs the docker image to test locally
 run:
-	docker build --progress=plain . -t rigel
-	docker run -d -it --rm --gpus all -p 7070:7070 rigel
+	docker build --progress=plain . -t rigel:2023.03.24
+	docker run -d -it --rm --gpus all -p 7070:7070 rigel:2023.03.24
 
 # Uploads the latest image to Cloud Run
 push:
